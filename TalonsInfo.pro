@@ -25,15 +25,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    inputtalonsdialog.cpp
 
 HEADERS += \
         mainwindow.h \
     database.h \
-    mainwindow.h
+    mainwindow.h \
+    inputtalonsdialog.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    inputtalonsdialog.ui
 
 RESOURCES += \
     resource.qrc

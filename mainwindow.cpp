@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "inputtalonsdialog.h"
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -15,3 +16,9 @@ MainWindow::~MainWindow()
 }
 
 
+
+void MainWindow::on_actionInputNumber_triggered()
+{
+    InputTalonsDialog *inTlnDlg = new InputTalonsDialog();
+    inTlnDlg->exec();
+}

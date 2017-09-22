@@ -17,6 +17,8 @@ public:
 
 private slots:
 
+    void on_actionInputNumber_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
