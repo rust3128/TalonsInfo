@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Tr/qtbase_ru.qm</file>
+        <file>image/form.png</file>
+    </qresource>
+</RCC>
