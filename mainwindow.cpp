@@ -21,4 +21,6 @@ void MainWindow::on_actionInputNumber_triggered()
 {
     InputTalonsDialog *inTlnDlg = new InputTalonsDialog();
     inTlnDlg->exec();
+    listTalons=inTlnDlg->talonsNumber;
+    qDebug() << listTalons;
 }

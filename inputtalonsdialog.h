@@ -2,6 +2,7 @@
 #define INPUTTALONSDIALOG_H
 
 #include <QDialog>
+#include <QAbstractButton>
 
 namespace Ui {
 class InputTalonsDialog;
@@ -15,8 +16,14 @@ public:
     explicit InputTalonsDialog(QWidget *parent = 0);
     ~InputTalonsDialog();
 
+private slots:
+    void on_buttonBox_clicked(QAbstractButton *button);
+private:
+    void getTalonsNumbers();
 private:
     Ui::InputTalonsDialog *ui;
+public:
+    QStringList talonsNumber;
 };
 
 #endif // INPUTTALONSDIALOG_H

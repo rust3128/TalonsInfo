@@ -21,6 +21,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QStringList listTalons;
 };
 
 #endif // MAINWINDOW_H
