@@ -41,3 +41,8 @@ void InputTalonsDialog::getTalonsNumbers()
     ui->plainTextEdit->clear();
     ui->plainTextEdit->insertPlainText(talonsNumber.join('\n'));
 }
+
+QStringList InputTalonsDialog::talonsListReturn()
+{
+    return talonsNumber;
+}

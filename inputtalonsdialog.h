@@ -22,8 +22,9 @@ private:
     void getTalonsNumbers();
 private:
     Ui::InputTalonsDialog *ui;
-public:
     QStringList talonsNumber;
+public:
+    QStringList talonsListReturn();
 };
 
 #endif // INPUTTALONSDIALOG_H
