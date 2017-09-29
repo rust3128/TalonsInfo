@@ -19,6 +19,10 @@ public:
 
 private slots:
     void on_actionInputNumber_triggered();
+    void on_tableViewTalons_doubleClicked(const QModelIndex &idx);
+
+    void on_pushButton_clicked();
+
 private:
     void crModelSerials();
     void crModelTalons();
@@ -27,7 +31,10 @@ private:
     Ui::MainWindow *ui;
     QStringList listTalons;
     QSqlQueryModel *modelSerials;
+    QSqlQueryModel *modTalon;
     QStandardItemModel *modelTalons;
+    int clientNumber;
+    QString numberTalon;
 
 };
 
